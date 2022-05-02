@@ -22,7 +22,7 @@ public class TestCinnamonCinemas {
 
     @Test
     public void checkHasEnoughAvailableTickets(){
-        assertTrue("has enough tickets available", ca.hasEnoughTickets(3));
+        assertEquals("0 0", ca.hasEnoughTickets(3));
     }
 
     @Test
