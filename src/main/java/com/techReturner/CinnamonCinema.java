@@ -18,4 +18,14 @@ public class CinnamonCinema {
         return seats;
     }
 
+    public int getRandomNumber(int min, int max) {
+        return (int) Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    public String purchaseTickets(int numberOfTickets){
+        String tickets = "";
+
+        return tickets;
+    }
+
 }
