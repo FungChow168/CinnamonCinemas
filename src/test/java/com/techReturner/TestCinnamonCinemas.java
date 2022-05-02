@@ -27,14 +27,12 @@ public class TestCinnamonCinemas {
 
     @Test
     public void checkAllocateSeat(){
-        assertEquals("A1,A2,A3", ca.purchaseTickets(3));
-        assertEquals("A1,A2,A3", ca.purchaseTickets(3));
-        assertEquals("A4,A5,B1", ca.purchaseTickets(3));
-        assertEquals("B2,B3", ca.purchaseTickets(2));
-        assertEquals("B4,B5,C1", ca.purchaseTickets(3));
-        assertEquals("C2", ca.purchaseTickets(1));
-        assertEquals("C3,C4", ca.purchaseTickets(2));
-        assertEquals("Sorry, insufficient tickets.", ca.purchaseTickets(3));
+        assertEquals("A1 A2 A3 ", ca.allocateSeat(3));
+        assertEquals("A4 A5 B1 ", ca.allocateSeat(3));
+        assertEquals("B2 B3 B4 ", ca.allocateSeat(3));
+        assertEquals("B5 C1 ", ca.allocateSeat(2));
+        assertEquals("C2 C3 C4 ", ca.allocateSeat(3));
+        assertEquals("Sorry, insufficient tickets.", ca.allocateSeat(3));
     }
 
 
